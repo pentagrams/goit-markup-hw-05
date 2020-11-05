@@ -99,7 +99,6 @@ svg {
 .link a:hover,
 .link a:focus {
   color: var(--color-blue);
-  outline: none;
 }
 
 .link:not(:last-child) {
@@ -133,7 +132,6 @@ svg {
 .header-contacts li a:hover svg,
 .header-contacts li a:focus svg {
   fill: var(--color-blue);
-  outline: none;
 }
 
 /*header*/
@@ -189,7 +187,6 @@ svg {
 .portfolio-table li:hover,
 .portfolio-table li a:focus {
   box-shadow: 2px 2px 5px var(--color-white-gray);
-  outline: none;
 }
 
 .position-wrap {
@@ -301,6 +298,7 @@ svg {
 
 .footer__social ul {
   display: flex;
+  margin-right: 93px;
 }
 
 .footer__social ul li a {
@@ -316,8 +314,8 @@ svg {
 .footer__social ul li a:focus {
   background-color: var(--color-blue);
   fill: var(--color-white);
-  outline: none;
 }
+
 .footer__social ul li svg {
   fill: var(--color-white);
 }
@@ -329,5 +327,67 @@ svg {
   display: block;
   width: 20px;
   height: 20px;
+}
+
+.footer-button {
+  position: relative;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 10px 62px 10px 29px;
+  margin: 0;
+  border: 0px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.footer-button::after {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/svg/icon_send.svg);
+  background-size: contain;
+  margin-left: 10px;
+}
+
+.footer-input {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 358px;
+  margin-right: 12px;
+  background-color: var(--color-night);
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+}
+
+.footer-input::placeholder {
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+}
+
+.footer-label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--color-white);
 }
 /*footer*/
